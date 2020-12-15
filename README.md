@@ -60,7 +60,7 @@ Starting Top Left, going Counter-Clockwise:
 | **20** | **CEN** | OUTPUT | Chip Enable for external SST25VF020B 2-Mbit SPI Serial Flash. Connect to the flash memory CE pin. |
 | **21** | **VDD** | OUTPUT | This pad allows measurement of the module's internal 3.3V rail (switched). Can be used to provide power for the external flash memory. |
 | **22** | **GND** | | Power ground / 0V. |
-| **23** | **ANTENNA** | RF | Antenna connection. Connected internally to the center pin of the u.FL connector. |
+| **23** | **ANTENNA** | RF | Antenna connection (50 Ohm). Connected internally to the center pin of the u.FL connector. |
 | **24** | **GND** | | Power ground / 0V. |
 
 The full schematic for the ARTIC R2 module is available [here](./Hardware/Schematic.pdf).
