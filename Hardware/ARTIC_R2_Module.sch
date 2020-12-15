@@ -8089,6 +8089,7 @@ Inrush Current Limit</text>
 <text x="36.322" y="221.488" size="1.27" layer="97" font="vector" align="top-left">Current Limit: 500mA
 ADM4210-1 VCB: 50mV
 Sense Resistor: 0.1 Ohms</text>
+<text x="65.532" y="64.262" size="1.27" layer="97">50Ω</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -9171,9 +9172,9 @@ Sense Resistor: 0.1 Ohms</text>
 <wire x1="408.94" y1="243.84" x2="401.32" y2="243.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="68.58" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="63.5" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J23" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="63.5" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="63.5" x2="63.5" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RF_TX" class="0">
