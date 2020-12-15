@@ -36,20 +36,30 @@ The ARGOS satellite system is restricted to specific programs and applications. 
 
 Starting Top Left, going Counter-Clockwise:
 
-- **CIPO**: SPI interface: Controller In Peripheral Out. 3.3V.
-- **COPI**: SPI interface: Controller Out Peripheral In. 3.3V.
-- **SCLK**: SPI interface clock signal. Typically 1MHz. 3.3V. See the ARTIC R2 datasheet for the permitted clock speeds.
-- **CS**: SPI interface Chip Select. 3.3V. Active low.
-- **GND**: Power ground / 0V.
-- **G8**: Pull up to 3.3V to set the RFPA0133 transmit power to maximum. The transmit power will be reduced by _approximately_ 5dB if this pin is pulled low or left open.
-- **BOOT**: Connected to the ARTIC BOOT pin. Pulled up to 3.3V via a 100k resistor. When high, the ARTIC boots from the on-board flash memory. Pull low if the ARTIC firmware will be downloaded by the MCU via SPI.
-- **INT1**: Connected to the ARTIC INT1 pin. Will be pulled up to 3.3V by the ARTIC to indicate (e.g.) an RX_VALID_MESSAGE.
-- **INT2**: Connected to the ARTIC INT2 pin. Will be pulled up to 3.3V by the ARTIC to indicate (e.g.) an RX_BUFFER_OVERFLOW.
-- **RESETB**: Connected to the ARTIC reset pin. Pulled up to 3.3V via a 100k resistor. Pull low to reset the ARTIC.
-- **PWR EN**: Pulled low via a 100k resistor. Pull up to 3.3V to enable power for the ARTIC R2.
-- **RF EN**: Pulled low via a 100k resistor. Pull up to 3.3V to enable power for the RF amplifier.
-- **VUSB**: Power input from (e.g.) USB. **Typically 5V. 6.5V maximum.**
-- **VBATT**: Power input from (e.g.) a LiPo battery. **Typically 3.6V - 4.2V. 6.5V maximum.**
+- **1 : G8**: Pull up to 3.3V to set the RFPA0133 transmit power to maximum. The transmit power will be reduced by _approximately_ 5dB if this pin is pulled low or left open.
+- **2 : 3.0V**: OUTPUT. This pad allows measurement of the module's internal 3.0V rail.
+- **3 : BOOT**: Connected to the ARTIC BOOT pin. Pulled up to 3.3V via a 100k resistor. When high, the ARTIC boots from the external flash memory. Pull low if the ARTIC firmware will be downloaded by the MCU via SPI.
+- **4 : INT1**: Connected to the ARTIC INT1 pin. Will be pulled up to 3.3V by the ARTIC to indicate (e.g.) an RX_VALID_MESSAGE.
+- **5 : INT2**: Connected to the ARTIC INT2 pin. Will be pulled up to 3.3V by the ARTIC to indicate (e.g.) an RX_BUFFER_OVERFLOW.
+- **6 : RESETB**: Connected to the ARTIC reset pin. Pulled up to 3.3V via a 100k resistor. Pull low to reset the ARTIC.
+- **7 : CS**: SPI interface Chip Select. 3.3V. Active low.
+- **8 : SCLK**: SPI interface clock signal. Typically 1MHz. 3.3V. See the ARTIC R2 datasheet for the permitted clock speeds.
+- **9 : COPI**: SPI interface: Controller Out Peripheral In. 3.3V.
+- **10 : CIPO**: SPI interface: Controller In Peripheral Out. 3.3V.
+- **11 : 1.8V**: OUTPUT: This pad allows measurement of the module's internal 1.8V rail.
+- **12 : GND**: Power ground / 0V.
+
+- **13 : PWR EN**: Pulled low via a 100k resistor. Pull up to 3.3V to enable power for the ARTIC R2.
+- **14 & 15 : VIN**: INPUT. 3.3V power supply for the module. **Voltage must be: 3.3V +/- 0.1V**. Current limit: 500mA.
+- **16 : GND**: Power ground / 0V.
+- **17 : SCLK**: Clock signal for external SST25VF020B 2-Mbit SPI Serial Flash. Connect to the flash memory SCK pin.
+- **18 : SI**: Serial Data In for external SST25VF020B 2-Mbit SPI Serial Flash. Connect to the flash memory SI pin.
+- **19 : SO**: Serial Data Out for external SST25VF020B 2-Mbit SPI Serial Flash. Connect to the flash memory SO pin.
+- **20 : CEN**: Chip Enable for external SST25VF020B 2-Mbit SPI Serial Flash. Connect to the flash memory CE pin.
+- **21 : VDD**: OUTPUT: This pad allows measurement of the module's internal 3.3V rail (switched). Can be used to provide power for the external flash memory.
+- **22 : GND**: Power ground / 0V.
+- **23 : ANTENNA**: Antenna connection. Connected internally to the center pin of the u.FL connector.
+- **24 : GND**: Power ground / 0V.
 
 The full schematic for the ARTIC R2 module is available [here](./Hardware/Schematic.pdf).
 
