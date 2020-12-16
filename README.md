@@ -3,6 +3,7 @@
 The [ARGOS ARTIC R2 satellite communication chipset](https://www.cls-telemetry.com/argos-solutions/argos-products/modems/artic-chipset/#1534863095666-398318f3-c367) in castellated module format.
 
 ![Top](./img/Top.png)
+![Bottom](./img/Bottom.png)
 
 ![Dimensions](./img/Dimensions.png)
 

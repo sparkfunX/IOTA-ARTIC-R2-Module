@@ -52,7 +52,8 @@
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
@@ -65,7 +66,6 @@
 <layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -186,12 +186,15 @@
 </layers>
 <library>
 <packages>
-<package name="1X01_CASTELLATED">
-<description>&lt;h3&gt;Castellated Pad (0.1")&lt;/h3&gt;</description>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.778" rot="R90"/>
-<text x="-1.27" y="1.143" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.27" y="-1.778" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<package name="CONN_01_CASTELLATED_4LAYER">
+<description>A castellated pad for 4-layer boards.
+Place the center of the pad on the dimension line.</description>
+<pad name="1" x="0" y="0" drill="0.299975" diameter="1.778" shape="square"/>
+<hole x="-0.508" y="0" drill="1.99898125"/>
+<rectangle x1="-0.889" y1="-0.889" x2="0.889" y2="0.889" layer="2"/>
+<rectangle x1="-0.889" y1="-0.889" x2="0.889" y2="0.889" layer="15"/>
+<text x="1.27" y="-0.762" size="0.6096" layer="27" ratio="20">&gt;VALUE</text>
+<text x="1.27" y="0.127" size="0.6096" layer="25" ratio="20">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -208,19 +211,22 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CONN_01_CASTELLATED" prefix="J" uservalue="yes">
-<description>&lt;h3&gt;Castellated Pad (0.1")&lt;/h3&gt;
-&lt;p&gt;&lt;/p&gt;</description>
+<deviceset name="CONN_01_CASTELLATED_4LAYER">
+<description>A castellated pad for 4-layer boards.
+Place the center of the pad on the dimension line.
+You will get a bunch of dimension and drill distance errors but there's not much we can do about that.</description>
 <gates>
 <gate name="G$1" symbol="CONN_01" x="0" y="0"/>
 </gates>
 <devices>
-<device name="CASTELLATED" package="1X01_CASTELLATED">
+<device name="" package="CONN_01_CASTELLATED_4LAYER">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="VALUE" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
