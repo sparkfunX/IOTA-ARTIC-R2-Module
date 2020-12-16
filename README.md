@@ -54,11 +54,11 @@ Starting Top Left, going Counter-Clockwise:
 | **14** | **VIN** | INPUT | 3.3V power supply for the module. **Voltage must be: 3.3V +/- 0.1V**. Current limit: 500mA. |
 | **15** | **VIN** | INPUT | 3.3V power supply for the module. **Voltage must be: 3.3V +/- 0.1V**. Current limit: 500mA. |
 | **16** | **GND** | | Power ground / 0V. |
-| **17** | **SCLK** | OUTPUT | Clock signal for external SST25VF020B 2-Mbit SPI Serial Flash. Connect to the flash memory SCK pin. |
-| **18** | **SI** | OUTPUT | Serial Data In for external SST25VF020B 2-Mbit SPI Serial Flash. Connect to the flash memory SI pin. |
-| **19** | **SO** | INPUT | Serial Data Out for external SST25VF020B 2-Mbit SPI Serial Flash. Connect to the flash memory SO pin. |
-| **20** | **CEN** | OUTPUT | Chip Enable for external SST25VF020B 2-Mbit SPI Serial Flash. Connect to the flash memory CE pin. |
-| **21** | **VDD** | OUTPUT | This pad allows measurement of the module's internal 3.3V rail (switched). Can be used to provide power for the external flash memory. |
+| **17** | **FLSH_SCLK** | OUTPUT | Clock signal for external SST25VF020B 2-Mbit SPI Serial Flash. Connect to the flash memory SCK pin. |
+| **18** | **FLSH_SI** | OUTPUT | Serial Data In for external SST25VF020B 2-Mbit SPI Serial Flash. Connect to the flash memory SI pin. |
+| **19** | **FLSH_SO** | INPUT | Serial Data Out for external SST25VF020B 2-Mbit SPI Serial Flash. Connect to the flash memory SO pin. |
+| **20** | **FLSH_CEN** | OUTPUT | Chip Enable for external SST25VF020B 2-Mbit SPI Serial Flash. Connect to the flash memory CE pin. |
+| **21** | **3.3V** | OUTPUT | This pad allows measurement of the module's internal 3.3V rail (switched). Can be used to provide power for the external flash memory. |
 | **22** | **GND** | | Power ground / 0V. |
 | **23** | **ANTENNA** | RF | Antenna connection (50 Ohm). Connected internally to the center pin of the u.FL connector. |
 | **24** | **GND** | | Power ground / 0V. |
