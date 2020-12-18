@@ -197,7 +197,7 @@ When running the panelizer, add a vertical gap of 0.2"
 to allow the castellated holes to be routed out</text>
 <dimension x1="0" y1="0" x2="20.32" y2="0" x3="10.16" y3="-3.81" textsize="1.778" textratio="15" layer="47" unit="inch"/>
 <dimension x1="0" y1="33.02" x2="0" y2="0" x3="-6.350003125" y3="16.51" textsize="1.778" textratio="15" layer="47" unit="inch"/>
-<text x="16.383" y="4.7625" size="1.27" layer="16" ratio="15" rot="MR90">X01</text>
+<text x="13.843" y="6.0325" size="1.27" layer="16" ratio="15" rot="MR90">X01</text>
 <wire x1="0" y1="33.02" x2="0" y2="0" width="0.1016" layer="20"/>
 <wire x1="0" y1="0" x2="20.32" y2="0" width="0.1016" layer="20"/>
 <wire x1="20.32" y1="0" x2="20.32" y2="33.02" width="0.1016" layer="20"/>
