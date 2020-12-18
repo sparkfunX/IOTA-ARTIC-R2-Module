@@ -196,6 +196,22 @@ Place the center of the pad on the dimension line.</description>
 <text x="1.27" y="-0.762" size="0.6096" layer="27" ratio="20">&gt;VALUE</text>
 <text x="1.27" y="0.127" size="0.6096" layer="25" ratio="20">&gt;NAME</text>
 </package>
+<package name="CONN_01_CASTELLATED_4LAYER_WITH_VIA">
+<description>A castellated pad for 4-layer boards.
+Place the center of the pad on the dimension line.
+This variant includes an extra in-board 0.3mm via.</description>
+<pad name="1" x="0" y="0" drill="0.299975" diameter="1.778" shape="square"/>
+<hole x="-0.508" y="0" drill="1.99898125"/>
+<rectangle x1="-0.889" y1="-0.889" x2="0.889" y2="0.889" layer="2"/>
+<rectangle x1="-0.889" y1="-0.889" x2="0.889" y2="0.889" layer="15"/>
+<text x="1.27" y="-0.762" size="0.6096" layer="27" ratio="20">&gt;VALUE</text>
+<text x="1.27" y="0.127" size="0.6096" layer="25" ratio="20">&gt;NAME</text>
+<pad name="2" x="1.016" y="0" drill="0.299975" diameter="0.5" stop="no"/>
+<wire x1="1.016" y1="0" x2="0" y2="0" width="0.5" layer="1"/>
+<wire x1="1.016" y1="0" x2="0" y2="0" width="0.5" layer="16"/>
+<wire x1="1.016" y1="0" x2="0" y2="0" width="0.5" layer="2"/>
+<wire x1="1.016" y1="0" x2="0" y2="0" width="0.5" layer="15"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CONN_01">
@@ -219,7 +235,7 @@ You will get a bunch of dimension and drill distance errors but there's not much
 <gate name="G$1" symbol="CONN_01" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="CONN_01_CASTELLATED_4LAYER">
+<device name="WITHOUT_VIA" package="CONN_01_CASTELLATED_4LAYER">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
@@ -227,6 +243,14 @@ You will get a bunch of dimension and drill distance errors but there's not much
 <technology name="">
 <attribute name="VALUE" value="" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="WITH_VIA" package="CONN_01_CASTELLATED_4LAYER_WITH_VIA">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

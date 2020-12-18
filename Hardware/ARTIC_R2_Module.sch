@@ -7724,6 +7724,22 @@ Place the center of the pad on the dimension line.</description>
 <text x="1.27" y="-0.762" size="0.6096" layer="27" ratio="20">&gt;VALUE</text>
 <text x="1.27" y="0.127" size="0.6096" layer="25" ratio="20">&gt;NAME</text>
 </package>
+<package name="CONN_01_CASTELLATED_4LAYER_WITH_VIA">
+<description>A castellated pad for 4-layer boards.
+Place the center of the pad on the dimension line.
+This variant includes an extra in-board 0.3mm via.</description>
+<pad name="1" x="0" y="0" drill="0.299975" diameter="1.778" shape="square"/>
+<hole x="-0.508" y="0" drill="1.99898125"/>
+<rectangle x1="-0.889" y1="-0.889" x2="0.889" y2="0.889" layer="2"/>
+<rectangle x1="-0.889" y1="-0.889" x2="0.889" y2="0.889" layer="15"/>
+<text x="1.27" y="-0.762" size="0.6096" layer="27" ratio="20">&gt;VALUE</text>
+<text x="1.27" y="0.127" size="0.6096" layer="25" ratio="20">&gt;NAME</text>
+<pad name="2" x="1.016" y="0" drill="0.299975" diameter="0.5" stop="no"/>
+<wire x1="1.016" y1="0" x2="0" y2="0" width="0.5" layer="1"/>
+<wire x1="1.016" y1="0" x2="0" y2="0" width="0.5" layer="16"/>
+<wire x1="1.016" y1="0" x2="0" y2="0" width="0.5" layer="2"/>
+<wire x1="1.016" y1="0" x2="0" y2="0" width="0.5" layer="15"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CONN_01">
@@ -7747,7 +7763,7 @@ You will get a bunch of dimension and drill distance errors but there's not much
 <gate name="G$1" symbol="CONN_01" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="CONN_01_CASTELLATED_4LAYER">
+<device name="WITHOUT_VIA" package="CONN_01_CASTELLATED_4LAYER">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
@@ -7755,6 +7771,14 @@ You will get a bunch of dimension and drill distance errors but there's not much
 <technology name="">
 <attribute name="VALUE" value="" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="WITH_VIA" package="CONN_01_CASTELLATED_4LAYER_WITH_VIA">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -7775,45 +7799,45 @@ You will get a bunch of dimension and drill distance errors but there's not much
 <smd name="2" x="4.445" y="-15.5575" dx="6.35" dy="1.27" layer="1" roundness="100"/>
 <smd name="3-1" x="4.445" y="15.5575" dx="6.35" dy="1.27" layer="1" roundness="100"/>
 <smd name="4" x="-4.445" y="15.5575" dx="6.35" dy="1.27" layer="1" roundness="100"/>
-<wire x1="-6.985" y1="-15.5575" x2="-1.905" y2="-15.5575" width="1.016" layer="46"/>
-<wire x1="1.905" y1="15.5575" x2="6.985" y2="15.5575" width="1.016" layer="46"/>
+<wire x1="-5.715" y1="-15.5575" x2="-3.175" y2="-15.5575" width="1.016" layer="46"/>
+<wire x1="3.175" y1="15.5575" x2="5.715" y2="15.5575" width="1.016" layer="46"/>
 <wire x1="6.985" y1="9.144" x2="6.985" y2="5.588" width="0.635" layer="51" curve="180"/>
 <wire x1="6.985" y1="9.144" x2="8.5725" y2="9.144" width="0.635" layer="51"/>
 <wire x1="6.985" y1="5.588" x2="8.5725" y2="5.588" width="0.635" layer="51"/>
-<smd name="1-16" x="-4.445" y="-15.5575" dx="6.35" dy="1.27" layer="16" roundness="100" rot="R180" cream="no"/>
+<smd name="1-16" x="-4.445" y="-15.5575" dx="3.81" dy="1.27" layer="16" roundness="100" rot="R180" cream="no"/>
 <polygon width="0.1524" layer="2" pour="cutout">
-<vertex x="-7.747" y="-15.5575" curve="90"/>
-<vertex x="-6.985" y="-16.3195"/>
-<vertex x="-1.905" y="-16.3195" curve="90"/>
-<vertex x="-1.143" y="-15.5575" curve="90"/>
-<vertex x="-1.905" y="-14.7955"/>
-<vertex x="-6.985" y="-14.7955" curve="90"/>
+<vertex x="-6.477" y="-15.5575" curve="90"/>
+<vertex x="-5.715" y="-16.3195"/>
+<vertex x="-3.175" y="-16.3195" curve="90"/>
+<vertex x="-2.413" y="-15.5575" curve="90"/>
+<vertex x="-3.175" y="-14.7955"/>
+<vertex x="-5.715" y="-14.7955" curve="90"/>
 </polygon>
 <polygon width="0.1524" layer="15" pour="cutout">
-<vertex x="-7.747" y="-15.5575" curve="90"/>
-<vertex x="-6.985" y="-16.3195"/>
-<vertex x="-1.905" y="-16.3195" curve="90"/>
-<vertex x="-1.143" y="-15.5575" curve="90"/>
-<vertex x="-1.905" y="-14.7955"/>
-<vertex x="-6.985" y="-14.7955" curve="90"/>
+<vertex x="-6.477" y="-15.5575" curve="90"/>
+<vertex x="-5.715" y="-16.3195"/>
+<vertex x="-3.175" y="-16.3195" curve="90"/>
+<vertex x="-2.413" y="-15.5575" curve="90"/>
+<vertex x="-3.175" y="-14.7955"/>
+<vertex x="-5.715" y="-14.7955" curve="90"/>
 </polygon>
 <polygon width="0.1524" layer="15" pour="cutout">
-<vertex x="1.143" y="15.5575" curve="90"/>
-<vertex x="1.905" y="14.7955"/>
-<vertex x="6.985" y="14.7955" curve="90"/>
-<vertex x="7.747" y="15.5575" curve="90"/>
-<vertex x="6.985" y="16.3195"/>
-<vertex x="1.905" y="16.3195" curve="90"/>
+<vertex x="2.413" y="15.5575" curve="90"/>
+<vertex x="3.175" y="14.7955"/>
+<vertex x="5.715" y="14.7955" curve="90"/>
+<vertex x="6.477" y="15.5575" curve="90"/>
+<vertex x="5.715" y="16.3195"/>
+<vertex x="3.175" y="16.3195" curve="90"/>
 </polygon>
 <polygon width="0.1524" layer="2" pour="cutout">
-<vertex x="1.143" y="15.5575" curve="90"/>
-<vertex x="1.905" y="14.7955"/>
-<vertex x="6.985" y="14.7955" curve="90"/>
-<vertex x="7.747" y="15.5575" curve="90"/>
-<vertex x="6.985" y="16.3195"/>
-<vertex x="1.905" y="16.3195" curve="90"/>
+<vertex x="2.413" y="15.5575" curve="90"/>
+<vertex x="3.175" y="14.7955"/>
+<vertex x="5.715" y="14.7955" curve="90"/>
+<vertex x="6.477" y="15.5575" curve="90"/>
+<vertex x="5.715" y="16.3195"/>
+<vertex x="3.175" y="16.3195" curve="90"/>
 </polygon>
-<smd name="3-16" x="4.445" y="15.5575" dx="6.35" dy="1.27" layer="16" roundness="100" rot="R180" cream="no"/>
+<smd name="3-16" x="4.445" y="15.5575" dx="3.81" dy="1.27" layer="16" roundness="100" rot="R180" cream="no"/>
 </package>
 </packages>
 <symbols>
@@ -9565,31 +9589,31 @@ You will get a bunch of dimension and drill distance errors but there's not much
 <part name="GND15" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
-<part name="J2" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
+<part name="J2" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
 <part name="GND34" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="J3" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J4" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J1" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J5" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J6" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J7" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J8" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J9" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J10" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J11" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J12" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J13" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J14" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J15" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J16" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J17" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J18" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J19" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J20" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J21" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J22" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J23" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
-<part name="J24" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="" value=""/>
+<part name="J3" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J4" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J1" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J5" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J6" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J7" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J8" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J9" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J10" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J11" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J12" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J13" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J14" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J15" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J16" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J17" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J18" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J19" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J20" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J21" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J22" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J23" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
+<part name="J24" library="New_Parts_Connectors" deviceset="CONN_01_CASTELLATED_4LAYER" device="WITHOUT_VIA" value=""/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
 <part name="SUPPLY14" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="SUPPLY16" library="SparkFun-PowerSymbols" deviceset="VREF1" device=""/>
@@ -11605,33 +11629,8 @@ Sense Resistor: 0.1 Ohms</text>
 <approved hash="104,1,322.58,243.84,U5,V2,RXSW,,,"/>
 <approved hash="104,1,322.58,238.76,U5,V1,TXSW,,,"/>
 <approved hash="104,1,50.8,193.04,U1,VCC,VIN,,,"/>
-<approved hash="104,1,60.96,81.28,SCREEN,P$1,GND,,,"/>
 <approved hash="206,1,347.98,109.22,N$26,,,,,"/>
 <approved hash="206,1,347.98,104.14,N$26,,,,,"/>
-<approved hash="113,1,22.1827,64.9326,J2,,,,,"/>
-<approved hash="113,1,22.1827,59.8526,J3,,,,,"/>
-<approved hash="113,1,22.1827,54.7726,J4,,,,,"/>
-<approved hash="113,1,22.1827,70.0126,J1,,,,,"/>
-<approved hash="113,1,22.1827,49.6926,J5,,,,,"/>
-<approved hash="113,1,22.1827,44.6126,J6,,,,,"/>
-<approved hash="113,1,22.1827,39.5326,J7,,,,,"/>
-<approved hash="113,1,22.1827,34.4526,J8,,,,,"/>
-<approved hash="113,1,22.1827,29.3726,J9,,,,,"/>
-<approved hash="113,1,22.1827,24.2926,J10,,,,,"/>
-<approved hash="113,1,22.1827,19.2126,J11,,,,,"/>
-<approved hash="113,1,22.1827,14.1326,J12,,,,,"/>
-<approved hash="113,1,76.8773,11.2674,J13,,,,,"/>
-<approved hash="113,1,76.8773,16.3474,J14,,,,,"/>
-<approved hash="113,1,76.8773,21.4274,J15,,,,,"/>
-<approved hash="113,1,76.8773,26.5074,J16,,,,,"/>
-<approved hash="113,1,76.8773,31.5874,J17,,,,,"/>
-<approved hash="113,1,76.8773,36.6674,J18,,,,,"/>
-<approved hash="113,1,76.8773,41.7474,J19,,,,,"/>
-<approved hash="113,1,76.8773,46.8274,J20,,,,,"/>
-<approved hash="113,1,76.8773,51.9074,J21,,,,,"/>
-<approved hash="113,1,76.8773,56.9874,J22,,,,,"/>
-<approved hash="113,1,76.8773,62.0674,J23,,,,,"/>
-<approved hash="113,1,76.8773,67.1474,J24,,,,,"/>
 </errors>
 </schematic>
 </drawing>
