@@ -51,15 +51,15 @@ Starting Top Left, going Counter-Clockwise:
 | **10** | **CIPO** | OUTPUT | SPI interface: Controller In Peripheral Out. 3.3V. |
 | **11** | **1.8V** | OUTPUT | This pad allows measurement of the module's internal 1.8V rail. |
 | **12** | **GND** | | Power ground / 0V. |
-| **13** | **PWR EN** | INPUT | Pulled low via a 10k resistor. Pull up to 3.3V to enable power for the ARTIC R2. |
+| **13** | **GND** | | Power ground / 0V. |
 | **14** | **VIN** | INPUT | 3.3V power supply for the module. **Voltage must be: 3.3V +/- 0.1V**. Current limit: 500mA. |
-| **15** | **VIN** | INPUT | 3.3V power supply for the module. **Voltage must be: 3.3V +/- 0.1V**. Current limit: 500mA. |
-| **16** | **GND** | | Power ground / 0V. |
-| **17** | **FLSH_SCLK** | OUTPUT | Clock signal for external SST25VF020B 2-Mbit SPI Serial Flash. Connect to the flash memory SCK pin. |
-| **18** | **FLSH_SI** | OUTPUT | Serial Data In for external SST25VF020B 2-Mbit SPI Serial Flash. Connect to the flash memory SI pin. |
-| **19** | **FLSH_SO** | INPUT | Serial Data Out for external SST25VF020B 2-Mbit SPI Serial Flash. Connect to the flash memory SO pin. |
-| **20** | **FLSH_CEN** | OUTPUT | Chip Enable for external SST25VF020B 2-Mbit SPI Serial Flash. Connect to the flash memory CE pin. |
-| **21** | **3.3V** | OUTPUT | This pad allows measurement of the module's internal 3.3V rail (switched). Can be used to provide power for the external flash memory. |
+| **15** | **PWR EN** | INPUT | Pulled low via a 10k resistor. Pull up to 3.3V to enable power for the ARTIC R2. |
+| **16** | **FLASH_PWR** | INPUT | 3.3V power supply for the internal flash memory. **Connect to Pin 17 (3.3V)**. |
+| **17** | **3.3V** | OUTPUT | Connected to the module's internal 3.3V rail (switched) and provides power for the internal flash memory. **Connect to Pin 16 (FLASH_PWR)**. |
+| **18** | **FLSH_SCLK** | | Clock signal for the internal SST25VF020B 2-Mbit SPI Serial Flash. Used when programming the internal flash memory. **Leave unconnected**. |
+| **19** | **FLSH_SI** | | Serial Data In for internal SST25VF020B 2-Mbit SPI Serial Flash. Used when programming the internal flash memory. **Leave unconnected**. |
+| **20** | **FLSH_SO** | | Serial Data Out for internal SST25VF020B 2-Mbit SPI Serial Flash. Used when programming the internal flash memory. **Leave unconnected**. |
+| **21** | **FLSH_CEN** | | Chip Enable for internal SST25VF020B 2-Mbit SPI Serial Flash. Used when programming the internal flash memory. **Leave unconnected**. |
 | **22** | **GND** | | Power ground / 0V. |
 | **23** | **ANTENNA** | RF | Antenna connection (50 Ohm). Connected internally to the center pin of the u.FL connector. |
 | **24** | **GND** | | Power ground / 0V. |
