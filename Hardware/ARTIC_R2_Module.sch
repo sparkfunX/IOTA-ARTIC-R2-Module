@@ -6898,7 +6898,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="" constant="no"/>
+<attribute name="PROD_ID" value="RES-14962" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -6919,7 +6919,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technology name="">
 <attribute name="DIGIKEY_PART" value="P17478CT-ND" constant="no"/>
 <attribute name="MANUFACTURER_PART" value="ERJ-3BWFR100V" constant="no"/>
-<attribute name="PROD_ID" value="" constant="no"/>
+<attribute name="PROD_ID" value="RES-15715" constant="no"/>
 <attribute name="VALUE" value="0.1R" constant="no"/>
 </technology>
 </technologies>
@@ -7719,10 +7719,20 @@ from 1.2 V to 4.5 V in 25-mV steps.&lt;/p&gt;</description>
 Place the center of the pad on the dimension line.</description>
 <pad name="1" x="0" y="0" drill="0.299975" diameter="1.778" shape="square"/>
 <hole x="-0.508" y="0" drill="1.99898125"/>
-<rectangle x1="-0.889" y1="-0.889" x2="0.889" y2="0.889" layer="2"/>
-<rectangle x1="-0.889" y1="-0.889" x2="0.889" y2="0.889" layer="15"/>
 <text x="1.27" y="-0.762" size="0.6096" layer="27" ratio="20">&gt;VALUE</text>
 <text x="1.27" y="0.127" size="0.6096" layer="25" ratio="20">&gt;NAME</text>
+<polygon width="0.0254" layer="2">
+<vertex x="0.889" y="0.889"/>
+<vertex x="-0.889" y="0.889"/>
+<vertex x="-0.889" y="-0.889"/>
+<vertex x="0.889" y="-0.889"/>
+</polygon>
+<polygon width="0.0254" layer="15">
+<vertex x="0.889" y="0.889"/>
+<vertex x="-0.889" y="0.889"/>
+<vertex x="-0.889" y="-0.889"/>
+<vertex x="0.889" y="-0.889"/>
+</polygon>
 </package>
 <package name="CONN_01_CASTELLATED_4LAYER_WITH_VIA">
 <description>A castellated pad for 4-layer boards.
@@ -7730,8 +7740,6 @@ Place the center of the pad on the dimension line.
 This variant includes an extra in-board 0.3mm via.</description>
 <pad name="1" x="0" y="0" drill="0.299975" diameter="1.778" shape="square"/>
 <hole x="-0.508" y="0" drill="1.99898125"/>
-<rectangle x1="-0.889" y1="-0.889" x2="0.889" y2="0.889" layer="2"/>
-<rectangle x1="-0.889" y1="-0.889" x2="0.889" y2="0.889" layer="15"/>
 <text x="1.27" y="-0.762" size="0.6096" layer="27" ratio="20">&gt;VALUE</text>
 <text x="1.27" y="0.127" size="0.6096" layer="25" ratio="20">&gt;NAME</text>
 <pad name="2" x="1.016" y="0" drill="0.299975" diameter="0.5" stop="no"/>
@@ -7739,6 +7747,18 @@ This variant includes an extra in-board 0.3mm via.</description>
 <wire x1="1.016" y1="0" x2="0" y2="0" width="0.5" layer="16"/>
 <wire x1="1.016" y1="0" x2="0" y2="0" width="0.5" layer="2"/>
 <wire x1="1.016" y1="0" x2="0" y2="0" width="0.5" layer="15"/>
+<polygon width="0.0254" layer="2">
+<vertex x="-0.889" y="0.889"/>
+<vertex x="-0.889" y="-0.889"/>
+<vertex x="0.889" y="-0.889"/>
+<vertex x="0.889" y="0.889"/>
+</polygon>
+<polygon width="0.0254" layer="15">
+<vertex x="-0.889" y="0.889"/>
+<vertex x="-0.889" y="-0.889"/>
+<vertex x="0.889" y="-0.889"/>
+<vertex x="0.889" y="0.889"/>
+</polygon>
 </package>
 </packages>
 <symbols>
@@ -9556,7 +9576,7 @@ You will get a bunch of dimension and drill distance errors but there's not much
 <technology name="">
 <attribute name="DIGIKEY_PART" value="SST25VF020B-80-4I-Q3AE-TCT-ND" constant="no"/>
 <attribute name="MANU_PART" value="SST25VF020B-80-4I-Q3AE-T" constant="no"/>
-<attribute name="PROD_ID" value="" constant="no"/>
+<attribute name="PROD_ID" value="IC-15716" constant="no"/>
 </technology>
 </technologies>
 </device>
