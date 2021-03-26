@@ -66,7 +66,7 @@ Starting Top Left, going Counter-Clockwise:
 | **23** | **ANTENNA** | RF | Antenna connection (50 Ohm). Connected internally to the center pin of the u.FL connector. |
 | **24** | **GND** | | Power ground / 0V. |
 
-The full schematic for the ARTIC R2 module is available [here](./Hardware/Schematic.pdf).
+The full schematic for IOTA is available [here](./Hardware/Schematic.pdf).
 
 ## Antenna
 
@@ -77,13 +77,13 @@ The antenna is connected via a uFL connector or the Antenna pad. A 400MHz quarte
 ## Arduino Library
 
 The [SparkFun ARGOS ARTIC R2 Arduino Library](https://github.com/sparkfun/SparkFun_ARGOS_ARTIC_R2_Arduino_Library) contains a full set of examples
-to get you up and running with the ARTIC R2 Breakout.
+to get you up and running with IOTA. Simply uncomment the _**#define IOTA**_, change the pins numbers if you need to, and away you go!
 
 ## Repository Contents
 
 - [**/Hardware**](./Hardware) - Eagle PCB, SCH and LBR design files
-- [**LICENSE.md**](./LICENSE,md) - contains the licence information
+- [**LICENSE.md**](./LICENSE.md) - contains the licence information
 
 ## Thanks
 
-The ARTIC R2 module is a remix of the reference design kindly provided by the Arribada Initiative and Icoteq Ltd.
+The ARTIC R2 module is a remix of the reference design kindly provided by the [Arribada Initiative](https://arribada.org/) and Icoteq Ltd.
