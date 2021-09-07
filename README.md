@@ -88,4 +88,4 @@ to get you up and running with IOTA. Simply uncomment the _**#define IOTA**_, ch
 
 ## Thanks
 
-The ARTIC R2 module is a remix of the reference design kindly provided by the [Arribada Initiative](https://arribada.org/) and Icoteq Ltd.
+The ARTIC R2 circuit is a remix of the reference design kindly provided by the [Arribada Initiative](https://arribada.org/) and Icoteq Ltd.
