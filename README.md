@@ -1,13 +1,10 @@
 # IOTA (Integrated Open-Source Transceiver for Argos)
 
-[![SparkX IOTA (SPX-17984)]()](https://www.sparkfun.com/products/17984)
+[![SparkX IOTA (SPX-17984)](https://cdn.sparkfun.com/assets/parts/1/7/1/5/8/17984-SparkFun_IOTA_-_Satellite_Communication_Module__ARTIC_R2_-01.jpg)](https://www.sparkfun.com/products/17984)
 
 [*SparkX IOTA (SPX-17984)*](https://www.sparkfun.com/products/17984)
 
 The [ARGOS ARTIC R2 satellite communication chipset](https://www.cls-telemetry.com/argos-solutions/argos-products/modems/artic-chipset/#1534863095666-398318f3-c367) in castellated module format.
-
-![Top](./img/Top.png)
-![Bottom](./img/Bottom.png)
 
 ![Dimensions](./img/Dimensions.png)
 
