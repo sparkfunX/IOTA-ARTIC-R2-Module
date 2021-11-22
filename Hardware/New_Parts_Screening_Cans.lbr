@@ -52,7 +52,7 @@
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
@@ -65,7 +65,7 @@
 <layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -186,23 +186,23 @@
 </layers>
 <library>
 <packages>
-<package name="ARTIC_R2_CASTELLATED">
-<description>Screening can for the ARTIC R2 castellated module</description>
-<wire x1="-8.5725" y1="15.5575" x2="8.5725" y2="15.5575" width="0.635" layer="51"/>
-<wire x1="8.5725" y1="15.5575" x2="8.5725" y2="9.144" width="0.635" layer="51"/>
-<wire x1="8.5725" y1="9.144" x2="8.5725" y2="5.588" width="0.635" layer="51"/>
-<wire x1="8.5725" y1="5.588" x2="8.5725" y2="-15.5575" width="0.635" layer="51"/>
-<wire x1="8.5725" y1="-15.5575" x2="-8.5725" y2="-15.5575" width="0.635" layer="51"/>
-<wire x1="-8.5725" y1="-15.5575" x2="-8.5725" y2="15.5575" width="0.635" layer="51"/>
+<package name="IOTA_CAN_CURVED_SLOTS_2">
+<description>A screening can for the IOTA ARGOS ARTIC R2 castellated module</description>
+<wire x1="-8.5725" y1="15.5575" x2="8.5725" y2="15.5575" width="0.2" layer="51"/>
+<wire x1="8.5725" y1="15.5575" x2="8.5725" y2="9.144" width="0.2" layer="51"/>
+<wire x1="8.5725" y1="9.144" x2="8.5725" y2="5.588" width="0.2" layer="51"/>
+<wire x1="8.5725" y1="5.588" x2="8.5725" y2="-15.5575" width="0.2" layer="51"/>
+<wire x1="8.5725" y1="-15.5575" x2="-8.5725" y2="-15.5575" width="0.2" layer="51"/>
+<wire x1="-8.5725" y1="-15.5575" x2="-8.5725" y2="15.5575" width="0.2" layer="51"/>
 <smd name="1-1" x="-4.445" y="-15.5575" dx="6.35" dy="1.27" layer="1" roundness="100"/>
 <smd name="2" x="4.445" y="-15.5575" dx="6.35" dy="1.27" layer="1" roundness="100"/>
 <smd name="3-1" x="4.445" y="15.5575" dx="6.35" dy="1.27" layer="1" roundness="100"/>
 <smd name="4" x="-4.445" y="15.5575" dx="6.35" dy="1.27" layer="1" roundness="100"/>
-<wire x1="-5.715" y1="-15.5575" x2="-3.175" y2="-15.5575" width="1.016" layer="46"/>
-<wire x1="3.175" y1="15.5575" x2="5.715" y2="15.5575" width="1.016" layer="46"/>
-<wire x1="6.985" y1="9.144" x2="6.985" y2="5.588" width="0.635" layer="51" curve="180"/>
-<wire x1="6.985" y1="9.144" x2="8.5725" y2="9.144" width="0.635" layer="51"/>
-<wire x1="6.985" y1="5.588" x2="8.5725" y2="5.588" width="0.635" layer="51"/>
+<wire x1="-5.649975" y1="-15.4305" x2="-3.240025" y2="-15.4305" width="0.6499875" layer="46" curve="50"/>
+<wire x1="5.649975" y1="15.4305" x2="3.240025" y2="15.4305" width="0.6499875" layer="46" curve="50"/>
+<wire x1="6.985" y1="9.144" x2="6.985" y2="5.588" width="0.2" layer="51" curve="180"/>
+<wire x1="6.985" y1="9.144" x2="8.5725" y2="9.144" width="0.2" layer="51"/>
+<wire x1="6.985" y1="5.588" x2="8.5725" y2="5.588" width="0.2" layer="51"/>
 <smd name="1-16" x="-4.445" y="-15.5575" dx="3.81" dy="1.27" layer="16" roundness="100" rot="R180" cream="no"/>
 <polygon width="0.1524" layer="2" pour="cutout">
 <vertex x="-6.477" y="-15.5575" curve="90"/>
@@ -237,6 +237,116 @@
 <vertex x="3.175" y="16.3195" curve="90"/>
 </polygon>
 <smd name="3-16" x="4.445" y="15.5575" dx="3.81" dy="1.27" layer="16" roundness="100" rot="R180" cream="no"/>
+<rectangle x1="-5.715" y1="-15.6575" x2="-3.175" y2="-15.457425" layer="48"/>
+<rectangle x1="3.175" y1="15.457425" x2="5.715" y2="15.6575" layer="48"/>
+</package>
+<package name="IOTA_CAN_CURVED_SLOTS_1">
+<description>A screening can for the IOTA ARGOS ARTIC R2 castellated module</description>
+<wire x1="-8.5725" y1="15.5575" x2="8.5725" y2="15.5575" width="0.2" layer="51"/>
+<wire x1="8.5725" y1="15.5575" x2="8.5725" y2="9.144" width="0.2" layer="51"/>
+<wire x1="8.5725" y1="9.144" x2="8.5725" y2="5.588" width="0.2" layer="51"/>
+<wire x1="8.5725" y1="5.588" x2="8.5725" y2="-15.5575" width="0.2" layer="51"/>
+<wire x1="8.5725" y1="-15.5575" x2="-8.5725" y2="-15.5575" width="0.2" layer="51"/>
+<wire x1="-8.5725" y1="-15.5575" x2="-8.5725" y2="15.5575" width="0.2" layer="51"/>
+<smd name="1-1" x="-4.445" y="-15.5575" dx="6.35" dy="1.27" layer="1" roundness="100"/>
+<smd name="2" x="4.445" y="-15.5575" dx="6.35" dy="1.27" layer="1" roundness="100"/>
+<smd name="3-1" x="4.445" y="15.5575" dx="6.35" dy="1.27" layer="1" roundness="100"/>
+<smd name="4" x="-4.445" y="15.5575" dx="6.35" dy="1.27" layer="1" roundness="100"/>
+<wire x1="-5.6515" y1="-15.4686" x2="-3.2385" y2="-15.4686" width="0.6499875" layer="46" curve="35"/>
+<wire x1="5.6515" y1="15.4686" x2="3.2385" y2="15.4686" width="0.6499875" layer="46" curve="35"/>
+<wire x1="6.985" y1="9.144" x2="6.985" y2="5.588" width="0.2" layer="51" curve="180"/>
+<wire x1="6.985" y1="9.144" x2="8.5725" y2="9.144" width="0.2" layer="51"/>
+<wire x1="6.985" y1="5.588" x2="8.5725" y2="5.588" width="0.2" layer="51"/>
+<smd name="1-16" x="-4.445" y="-15.5575" dx="3.81" dy="1.27" layer="16" roundness="100" rot="R180" cream="no"/>
+<polygon width="0.1524" layer="2" pour="cutout">
+<vertex x="-6.477" y="-15.5575" curve="90"/>
+<vertex x="-5.715" y="-16.3195"/>
+<vertex x="-3.175" y="-16.3195" curve="90"/>
+<vertex x="-2.413" y="-15.5575" curve="90"/>
+<vertex x="-3.175" y="-14.7955"/>
+<vertex x="-5.715" y="-14.7955" curve="90"/>
+</polygon>
+<polygon width="0.1524" layer="15" pour="cutout">
+<vertex x="-6.477" y="-15.5575" curve="90"/>
+<vertex x="-5.715" y="-16.3195"/>
+<vertex x="-3.175" y="-16.3195" curve="90"/>
+<vertex x="-2.413" y="-15.5575" curve="90"/>
+<vertex x="-3.175" y="-14.7955"/>
+<vertex x="-5.715" y="-14.7955" curve="90"/>
+</polygon>
+<polygon width="0.1524" layer="15" pour="cutout">
+<vertex x="2.413" y="15.5575" curve="90"/>
+<vertex x="3.175" y="14.7955"/>
+<vertex x="5.715" y="14.7955" curve="90"/>
+<vertex x="6.477" y="15.5575" curve="90"/>
+<vertex x="5.715" y="16.3195"/>
+<vertex x="3.175" y="16.3195" curve="90"/>
+</polygon>
+<polygon width="0.1524" layer="2" pour="cutout">
+<vertex x="2.413" y="15.5575" curve="90"/>
+<vertex x="3.175" y="14.7955"/>
+<vertex x="5.715" y="14.7955" curve="90"/>
+<vertex x="6.477" y="15.5575" curve="90"/>
+<vertex x="5.715" y="16.3195"/>
+<vertex x="3.175" y="16.3195" curve="90"/>
+</polygon>
+<smd name="3-16" x="4.445" y="15.5575" dx="3.81" dy="1.27" layer="16" roundness="100" rot="R180" cream="no"/>
+<rectangle x1="-5.715" y1="-15.6575" x2="-3.175" y2="-15.457425" layer="48"/>
+<rectangle x1="3.175" y1="15.457425" x2="5.715" y2="15.6575" layer="48"/>
+</package>
+<package name="IOTA_CAN_STRAIGHT_SLOTS">
+<description>A screening can for the IOTA ARGOS ARTIC R2 castellated module</description>
+<wire x1="-8.5725" y1="15.5575" x2="8.5725" y2="15.5575" width="0.2" layer="51"/>
+<wire x1="8.5725" y1="15.5575" x2="8.5725" y2="9.144" width="0.2" layer="51"/>
+<wire x1="8.5725" y1="9.144" x2="8.5725" y2="5.588" width="0.2" layer="51"/>
+<wire x1="8.5725" y1="5.588" x2="8.5725" y2="-15.5575" width="0.2" layer="51"/>
+<wire x1="8.5725" y1="-15.5575" x2="-8.5725" y2="-15.5575" width="0.2" layer="51"/>
+<wire x1="-8.5725" y1="-15.5575" x2="-8.5725" y2="15.5575" width="0.2" layer="51"/>
+<smd name="1-1" x="-4.445" y="-15.5575" dx="6.35" dy="1.27" layer="1" roundness="100"/>
+<smd name="2" x="4.445" y="-15.5575" dx="6.35" dy="1.27" layer="1" roundness="100"/>
+<smd name="3-1" x="4.445" y="15.5575" dx="6.35" dy="1.27" layer="1" roundness="100"/>
+<smd name="4" x="-4.445" y="15.5575" dx="6.35" dy="1.27" layer="1" roundness="100"/>
+<wire x1="-5.715" y1="-15.4305" x2="-3.175" y2="-15.4305" width="0.65" layer="46"/>
+<wire x1="5.715" y1="15.5575" x2="3.175" y2="15.5575" width="0.65" layer="46"/>
+<wire x1="6.985" y1="9.144" x2="6.985" y2="5.588" width="0.2" layer="51" curve="180"/>
+<wire x1="6.985" y1="9.144" x2="8.5725" y2="9.144" width="0.2" layer="51"/>
+<wire x1="6.985" y1="5.588" x2="8.5725" y2="5.588" width="0.2" layer="51"/>
+<smd name="1-16" x="-4.445" y="-15.5575" dx="3.81" dy="1.27" layer="16" roundness="100" rot="R180" cream="no"/>
+<polygon width="0.1524" layer="2" pour="cutout">
+<vertex x="-6.477" y="-15.5575" curve="90"/>
+<vertex x="-5.715" y="-16.3195"/>
+<vertex x="-3.175" y="-16.3195" curve="90"/>
+<vertex x="-2.413" y="-15.5575" curve="90"/>
+<vertex x="-3.175" y="-14.7955"/>
+<vertex x="-5.715" y="-14.7955" curve="90"/>
+</polygon>
+<polygon width="0.1524" layer="15" pour="cutout">
+<vertex x="-6.477" y="-15.5575" curve="90"/>
+<vertex x="-5.715" y="-16.3195"/>
+<vertex x="-3.175" y="-16.3195" curve="90"/>
+<vertex x="-2.413" y="-15.5575" curve="90"/>
+<vertex x="-3.175" y="-14.7955"/>
+<vertex x="-5.715" y="-14.7955" curve="90"/>
+</polygon>
+<polygon width="0.1524" layer="15" pour="cutout">
+<vertex x="2.413" y="15.5575" curve="90"/>
+<vertex x="3.175" y="14.7955"/>
+<vertex x="5.715" y="14.7955" curve="90"/>
+<vertex x="6.477" y="15.5575" curve="90"/>
+<vertex x="5.715" y="16.3195"/>
+<vertex x="3.175" y="16.3195" curve="90"/>
+</polygon>
+<polygon width="0.1524" layer="2" pour="cutout">
+<vertex x="2.413" y="15.5575" curve="90"/>
+<vertex x="3.175" y="14.7955"/>
+<vertex x="5.715" y="14.7955" curve="90"/>
+<vertex x="6.477" y="15.5575" curve="90"/>
+<vertex x="5.715" y="16.3195"/>
+<vertex x="3.175" y="16.3195" curve="90"/>
+</polygon>
+<smd name="3-16" x="4.445" y="15.5575" dx="3.81" dy="1.27" layer="16" roundness="100" rot="R180" cream="no"/>
+<rectangle x1="-5.715" y1="-15.6575" x2="-3.175" y2="-15.457425" layer="48"/>
+<rectangle x1="3.175" y1="15.457425" x2="5.715" y2="15.6575" layer="48"/>
 </package>
 </packages>
 <symbols>
@@ -252,20 +362,39 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ARTIC_R2_CASTELLATED_CAN">
-<description>A screening can for the castellated ARTIC R2 module</description>
+<deviceset name="IOTA_SCREENING_CAN">
+<description>A screening can for the IOTA ARGOS ARTIC R2 castellated module</description>
 <gates>
 <gate name="G$1" symbol="SCREENING_CAN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="ARTIC_R2_CASTELLATED">
+<device name="CURVED_SLOTS_2" package="IOTA_CAN_CURVED_SLOTS_2">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1-1 1-16 2 3-1 3-16 4"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="" constant="no"/>
-<attribute name="VALUE" value="ARTIC_R2_CASTELLATED_CAN" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="CURVED_SLOTS_1" package="IOTA_CAN_CURVED_SLOTS_1">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1-1 1-16 2 3-1 3-16 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="STRAIGHT_SLOTS" package="IOTA_CAN_STRAIGHT_SLOTS">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1-1 1-16 2 3-1 3-16 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
