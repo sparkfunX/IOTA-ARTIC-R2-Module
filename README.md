@@ -42,8 +42,8 @@ The ARGOS satellite system is **currently** restricted to specific programs and 
 
 ## Documentation
 
-- [Arduino Library](https://github.com/sparkfun/SparkFun_ARGOS_ARTIC_R2_Arduino_Library)
-- [Hookup Guide](https://learn.sparkfun.com/tutorials/iota-artic-r2-satellite-communication-module-hookup-guide)
+- [**Arduino Library**](https://github.com/sparkfun/SparkFun_ARGOS_ARTIC_R2_Arduino_Library) - SparkFun ARGOS ARTIC R2 Arduino Library
+- [**Hookup Guide**](https://learn.sparkfun.com/tutorials/iota-artic-r2-satellite-communication-module-hookup-guide) - a hookup guide for the SparkFun IOTA - Satellite Communication Module (ARTIC R2)
 
 ## Thanks
 
